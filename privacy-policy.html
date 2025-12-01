@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Retail Show Australia 2026</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a3a5f 0%, #2c5c8a 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            margin-right: 15px;
+            color: #ffcc00;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            margin: 40px 0;
+            gap: 30px;
+        }
+        
+        .toc {
+            flex: 0 0 280px;
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: fit-content;
+            position: sticky;
+            top: 30px;
+        }
+        
+        .toc h2 {
+            color: #1a3a5f;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eaeaea;
+            font-size: 1.4rem;
+        }
+        
+        .toc ul {
+            list-style: none;
+        }
+        
+        .toc li {
+            margin-bottom: 12px;
+        }
+        
+        .toc a {
+            text-decoration: none;
+            color: #555;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            padding: 8px 0;
+            border-left: 3px solid transparent;
+        }
+        
+        .toc a:hover {
+            color: #1a3a5f;
+            border-left: 3px solid #1a3a5f;
+            padding-left: 10px;
+        }
+        
+        .toc i {
+            margin-right: 10px;
+            font-size: 0.9rem;
+            color: #1a3a5f;
+        }
+        
+        .policy-content {
+            flex: 1;
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            scroll-margin-top: 30px;
+        }
+        
+        .section h2 {
+            color: #1a3a5f;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section h2 i {
+            margin-right: 10px;
+            color: #ffcc00;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .section ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        .highlight-box {
+            background: #f0f7ff;
+            border-left: 4px solid #1a3a5f;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .contact-info {
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .contact-info h3 {
+            color: #1a3a5f;
+            margin-bottom: 15px;
+        }
+        
+        footer {
+            background: #1a3a5f;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #1a3a5f;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background: #2c5c8a;
+            transform: translateY(-3px);
+        }
+        
+        .effective-date {
+            background: #ffcc00;
+            color: #1a3a5f;
+            padding: 10px 20px;
+            border-radius: 30px;
+            display: inline-block;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 992px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .toc {
+                position: static;
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .policy-content {
+                padding: 25px;
+            }
+            
+            .section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <i class="fas fa-shield-alt logo"></i>
+                <h1>Privacy Policy</h1>
+            </div>
+            <p class="subtitle">Retail Show Australia 2026 - Your privacy is important to us</p>
+            <div class="effective-date">Effective Date: 28 October 2025</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content-wrapper">
+            <nav class="toc">
+                <h2><i class="fas fa-list"></i> Table of Contents</h2>
+                <ul>
+                    <li><a href="#intro"><i class="fas fa-chevron-right"></i> Introduction</a></li>
+                    <li><a href="#info-collected"><i class="fas fa-chevron-right"></i> Information We Collect</a></li>
+                    <li><a href="#info-use"><i class="fas fa-chevron-right"></i> How We Use Your Information</a></li>
+                    <li><a href="#info-sharing"><i class="fas fa-chevron-right"></i> Information Sharing</a></li>
+                    <li><a href="#cookies"><i class="fas fa-chevron-right"></i> Cookies & Technologies</a></li>
+                    <li><a href="#rights"><i class="fas fa-chevron-right"></i> Your Rights</a></li>
+                    <li><a href="#security"><i class="fas fa-chevron-right"></i> Data Security</a></li>
+                    <li><a href="#international"><i class="fas fa-chevron-right"></i> International Transfers</a></li>
+                    <li><a href="#minors"><i class="fas fa-chevron-right"></i> Privacy of Minors</a></li>
+                    <li><a href="#changes"><i class="fas fa-chevron-right"></i> Policy Changes</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <main class="policy-content">
+                <section id="intro" class="section">
+                    <h2><i class="fas fa-info-circle"></i> Introduction</h2>
+                    <p><strong>Organiser:</strong> Hisern International Pty Ltd (referred to as "we", "us", or "our")</p>
+                    <p><strong>Event:</strong> Retail Show Australia 2026 (referred to as "the Event")</p>
+                    <p>Hisern International Pty Ltd is committed to protecting and respecting your privacy. This Privacy Policy outlines how we collect, use, store, disclose, and protect your personal information through the official website for the Event, related platforms, applications, and services (collectively referred to as the "Services").</p>
+                    <div class="highlight-box">
+                        <p>Please read this policy carefully. By using our Services, you consent to the handling of your personal information as described herein. If you do not agree with this policy, please do not use our Services.</p>
+                    </div>
+                </section>
+                
+                <section id="info-collected" class="section">
+                    <h2><i class="fas fa-database"></i> Information We Collect</h2>
+                    <p>We collect information about you in three ways: (1) information you provide directly to us; (2) information we obtain from third parties; and (3) information collected through automated technologies.</p>
+                    
+                    <h3>1.1 Information You Provide Directly</h3>
+                    <p>Depending on how you interact with us, we may collect the following personal information directly from you:</p>
+                    <ul>
+                        <li><strong>Contact details:</strong> such as your name, job title, company name, email address, postal address, phone number, and social media handles.</li>
+                        <li><strong>Account credentials:</strong> such as usernames, passwords, and similar security information.</li>
+                        <li><strong>Registration and profile information:</strong> such as educational and professional background, industry sector, visit or exhibition interests, dietary requirements, accessibility needs, and photograph.</li>
+                        <li><strong>Payment information:</strong> such as credit or debit card details (note: payments are typically processed by third-party payment processors).</li>
+                        <li><strong>Communications:</strong> feedback, comments, or queries you provide to us via customer service, contact forms, meeting booking systems, etc.</li>
+                    </ul>
+                    
+                    <h3>1.2 Information from Third Parties</h3>
+                    <p>We may obtain personal information about you from third-party sources, including:</p>
+                    <ul>
+                        <li><strong>Business partners:</strong> such as co-branding partners or organisations we engage in joint marketing activities with.</li>
+                        <li><strong>Social networks:</strong> when you grant permission to our Services to access your data on these platforms.</li>
+                        <li><strong>Publicly available sources:</strong> we may collect data from legitimate public sources to supplement or verify the information we hold.</li>
+                    </ul>
+                    
+                    <h3>1.3 Information from Automated Technologies</h3>
+                    <p>When you visit our website or use our Services, we automatically collect certain Device Information, which may include:</p>
+                    <ul>
+                        <li><strong>Log information:</strong> such as your IP address, browser type, internet service provider, referring/exit pages, and date/time stamps.</li>
+                        <li><strong>Cookies and similar technologies:</strong> we use cookies, web beacons, tags, and pixels to collect information about your interactions with our Services.</li>
+                        <li><strong>Event imagery:</strong> at the Event venue, we may capture footage and imagery through photography, video recording, or CCTV for security, archival, and promotional purposes.</li>
+                    </ul>
+                </section>
+                
+                <section id="info-use" class="section">
+                    <h2><i class="fas fa-cogs"></i> How We Use Your Information</h2>
+                    <p>We use your information for the following purposes:</p>
+                    <ul>
+                        <li><strong>Providing the Services:</strong> to process your registration, manage your account, schedule meetings, process payments, and provide your attendance credentials.</li>
+                        <li><strong>Communication and Support:</strong> to send you transaction confirmations, Event updates, important safety notices, and provide customer support.</li>
+                        <li><strong>Personalisation and Improvement:</strong> to tailor content based on your interests and location, and to improve our Services and the quality of the Event.</li>
+                        <li><strong>Marketing (with your consent):</strong> to send you marketing communications about future events, related products, services, and our partners' offerings. You can opt-out at any time.</li>
+                        <li><strong>Event Community Features:</strong> to facilitate business connections between exhibitors, visitors, and sponsors through features like participant directories or matchmaking systems.</li>
+                        <li><strong>Analytics and Reporting:</strong> to analyse usage trends, measure the effectiveness of promotional campaigns, and conduct general business analysis.</li>
+                        <li><strong>Health and Safety:</strong> to implement necessary measures to protect the health and safety of Event participants.</li>
+                        <li><strong>Legal Compliance:</strong> to comply with our legal obligations, resolve disputes, and enforce our agreements.</li>
+                    </ul>
+                </section>
+                
+                <section id="info-sharing" class="section">
+                    <h2><i class="fas fa-share-alt"></i> Information Sharing</h2>
+                    <p>We only share your personal information in the following circumstances:</p>
+                    <ul>
+                        <li><strong>Service Providers:</strong> with trusted third parties who provide services on our behalf, such as payment processing, data analytics, email delivery, customer support, and onsite logistics.</li>
+                        <li><strong>Event Ecosystem:</strong> your business contact details will be shared with an exhibitor or sponsor only after you explicitly consent or actively scan their QR code at the Event.</li>
+                        <li><strong>Legal Requirements:</strong> when required to respond to legal process, protect our rights, or comply with applicable laws.</li>
+                        <li><strong>Business Transfer:</strong> in connection with a merger, acquisition, or sale of assets, we will notify you of any changes to the ownership of your information.</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p>We <strong>do not sell</strong> your personal information to third parties for their independent marketing purposes.</p>
+                    </div>
+                </section>
+                
+                <section id="cookies" class="section">
+                    <h2><i class="fas fa-cookie-bite"></i> Cookies & Similar Technologies</h2>
+                    <p>We use cookies to enhance your website experience, analyse traffic, and deliver personalised content. You can manage your cookie preferences through your browser settings; however, please note that disabling cookies may affect the functionality of the website.</p>
+                    <p>For more details on the specific categories of cookies we use (e.g., necessary, preferences, statistics, marketing) and how to manage them, please visit our website's <strong>Cookie Preference Centre</strong>.</p>
+                </section>
+                
+                <section id="rights" class="section">
+                    <h2><i class="fas fa-user-shield"></i> Your Rights</h2>
+                    <p>Under Australian privacy laws (including the <em>Privacy Act 1988</em> (Cth)), you have the right to:</p>
+                    <ul>
+                        <li><strong>Access:</strong> request access to the personal information we hold about you.</li>
+                        <li><strong>Correction:</strong> request correction of inaccurate or incomplete personal information.</li>
+                        <li><strong>Deletion:</strong> request deletion of your personal information in certain circumstances.</li>
+                        <li><strong>Objection:</strong> object to the processing of your personal information, particularly for direct marketing purposes.</li>
+                        <li><strong>Withdraw Consent:</strong> withdraw your consent for marketing communications at any time.</li>
+                    </ul>
+                    <p>To exercise these rights, please contact us using the details provided in the Contact Us section. We will respond to your request within a reasonable period.</p>
+                </section>
+                
+                <section id="security" class="section">
+                    <h2><i class="fas fa-lock"></i> Data Security & Retention</h2>
+                    <p>We take reasonable administrative, technical, and physical measures to protect your personal information from misuse, interference, loss, and unauthorised access, modification, or disclosure.</p>
+                    <p>We retain your personal information only for as long as necessary to fulfil the purposes outlined in this policy or as required by law.</p>
+                </section>
+                
+                <section id="international" class="section">
+                    <h2><i class="fas fa-globe"></i> International Data Transfers</h2>
+                    <p>Our Services may involve transferring your personal information to, and processing it in, countries outside of Australia. We will ensure that such transfers are subject to appropriate safeguards as required by law to protect your information.</p>
+                </section>
+                
+                <section id="minors" class="section">
+                    <h2><i class="fas fa-child"></i> Privacy of Minors</h2>
+                    <p>Our Services are not directed at individuals under the age of 16. We do not knowingly collect personal information from children under 16.</p>
+                </section>
+                
+                <section id="changes" class="section">
+                    <h2><i class="fas fa-sync-alt"></i> Policy Changes</h2>
+                    <p>We may update this policy from time to time to reflect changes in our practices or for legal reasons. We will notify you of any material changes by posting the updated policy on our website. Please check this page periodically for updates.</p>
+                </section>
+                
+                <section id="contact" class="section">
+                    <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+                    <p>If you have any questions about this Privacy Policy, wish to exercise your privacy rights, or wish to make a complaint, please contact us at:</p>
+                    
+                    <div class="contact-info">
+                        <h3>Hisern International Pty Ltd</h3>
+                        <p><strong>Email:</strong> info@hisern.com.au</p>
+                        <p><strong>Postal Address:</strong> South Tower L12, 80 Collins Street, Melbourne VIC 3000, Australia</p>
+                        <p>If you are not satisfied with how we handle your complaint, you may lodge a complaint with the Office of the Australian Information Commissioner (OAIC).</p>
+                    </div>
+                </section>
+                
+                <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eaeaea;">
+                    <p><strong>© 2025 Hisern International Pty Ltd. All rights reserved.</strong></p>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Retail Show Australia 2026 | Protecting Your Privacy</p>
+            <p>This privacy policy was last updated on 28 October 2025</p>
+        </div>
+    </footer>
+    
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 30,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
